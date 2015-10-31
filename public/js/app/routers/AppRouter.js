@@ -1,9 +1,10 @@
-define(['marionette', 'controllers/Controller'], function(Marionette, Controller) {
+define(['marionette'], function(Marionette) {
    return Marionette.AppRouter.extend({
      //"index" must be a method in AppRouter's controller
        appRoutes: {
            "": "index",
-          'show': "list"
+          'show': "list",
+         'songs/:id': "songs"
        }
    });
 });

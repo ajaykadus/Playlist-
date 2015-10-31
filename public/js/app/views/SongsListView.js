@@ -1,8 +1,8 @@
-define([ 'marionette', 'views/PlayListItemView'],
-  function (Marionette, PlayListItemView) {
+define([ 'marionette', 'views/SongListItemView'],
+  function (Marionette, SongListItemView) {
     //ItemView provides some default rendering logic
     return Marionette.CollectionView.extend({
-      itemView: PlayListItemView,
+      itemView: SongListItemView,
       tagName: 'ul',
       className: 'list-group'
     });
