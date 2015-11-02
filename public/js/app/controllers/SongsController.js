@@ -8,7 +8,6 @@ define(['App', 'backbone', 'marionette', 'views/SongsListView'],
       },
 
       show: function () {
-        console.log(this.songsListCollection)
         var view = new SongsListView({
           collection: this.songsListCollection
         });
